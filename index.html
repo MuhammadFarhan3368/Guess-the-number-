@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Guess the Number
+        <div class="toggle-container">
+            <input type="checkbox" id="toggle" />
+            <label class="toggle" for="toggle"></label>
+            </div>
+    </h1>
+    <p>Try and guessing a random number between 1-100</p>
+    <p>You have 10 attemps to guess a right number</p>
+
+    <div class="form">
+        <form>
+            <h1>Guess a number</h1>
+            <input type="text" autofocus>
+            <button type="submit" class="submitButton">Submit guess</button>
+        </form>
+    </div>
+
+
+    <div class="result">
+        <p>Previous Guesses: <span class="previousGuess"></span></p>
+        <p>Remaining Guesses: <span class="remainingGuess"></span></p>
+        <p class="lowOrHi"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
