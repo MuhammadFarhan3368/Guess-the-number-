@@ -102,7 +102,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + .toggle {
-    background-color: #4caf50;
+    background-color: aqua;
 }
 
 input[type="checkbox"]:checked + .toggle:before {
