@@ -1,7 +1,7 @@
 let randomNumber = Math.floor(Math.random() * 100 + 1)
 console.log(randomNumber)
 
-let userInput = document.querySelector('input');
+let userInput = document.querySelector('#userInput');
 let submitButton = document.querySelector('.submitButton');
 let previousGuess = document.querySelector('.previousGuess');
 let remainingGuess = document.querySelector('.remainingGuess');
@@ -27,14 +27,15 @@ if (plaGame) {
         e.preventDefault();
         let userGuess = parseInt(userInput.value)
         validateGuess(userGuess)
+        console.log(userGuess)
     })
 };
 
 function validateGuess(userGuess) {
-    if (isNaN(userGuess)) {
+    if (isNaN(!userGuess)) {
         alert("enter a valid number")
     }else if(userGuess == ''){
-        alert("enter a valid number")
+        alert("Type a number please")
     }else if(userGuess < 1){
         alert("please enter a number greater than 1")
     }else if(userGuess > 100){

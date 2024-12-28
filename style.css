@@ -17,11 +17,11 @@ body{
     background-color: burlywood;
 }
 
-h1{
+.header{
     width: 100%;
     display: flex;
-    margin: auto;
     justify-content: center;
+    align-items: center;
 }
 
 h1, p{
@@ -94,7 +94,7 @@ button, .submitButton{
     height: 20px;
     background-color: white;
     border-radius: 50%;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 input[type="checkbox"] {
@@ -107,4 +107,18 @@ input[type="checkbox"]:checked + .toggle {
 
 input[type="checkbox"]:checked + .toggle:before {
     transform: translateX(30px);
+}
+
+@media(max-width:600px){
+    .toggle-container{
+        width: 44px;
+        height: 23px;
+    }
+    input[type="checkbox"]:checked + .toggle:before {
+        transform: translateX(20px);
+    }
+    .toggle:before{
+        height: 13px;
+        width: 13px;
+    }
 }

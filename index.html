@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Guess the Number
+    <div class="header">
+        <h1>Guess the Number</h1>
         <div class="toggle-container">
             <input type="checkbox" id="toggle" />
             <label class="toggle" for="toggle"></label>
             </div>
-    </h1>
+        </div>
     <p>Try and guessing a random number between 1-100</p>
     <p>You have 10 attemps to guess a right number</p>
 
     <div class="form">
         <form>
             <h1>Guess a number</h1>
-            <input type="text" autofocus>
+            <input type="number" id="userInput" autofocus>
             <button type="submit" class="submitButton">Submit guess</button>
         </form>
     </div>
